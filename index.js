@@ -18,13 +18,14 @@ app.use(express.urlencoded({extended:true}));
 //To fetch assets
 app.use('/public', express.static('public'));
 
-const corsOptions = {
-    origin: "*",
-    credentials: true,
-    optionsSuccessStatus: 200
-};
+// const corsOptions = {
+//     origin: "*",
+//     credentials: true,
+//     optionsSuccessStatus: 200
+// };
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_STRING);
 mongoose.connection.once('open', () => console.log('Now connected to MongoDB Atlas.'))
