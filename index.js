@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended:true}));
 app.use('/public', express.static('public'));
 
 const corsOptions = {
-    origin: ['http://localhost:3000','https://jff-blog-client.vercel.app/', 'https://jff-blog-client-nlyk0fabc-joe-davids-projects.vercel.app/'],
+    origin: ['http://localhost:3000','https://jff-blog-client.vercel.app', 'https://jff-blog-client-rabgjm8n4-joe-davids-projects.vercel.app'],
     credentials: true,
     optionsSuccessStatus: 200
 };
