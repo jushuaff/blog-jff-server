@@ -1,6 +1,6 @@
 //[SECTION] Dependencies and Modules
 const express = require("express");
-const postController = require("../controllers/Post");
+const postController = require("../controllers/post");
 const { verify, verifyAdmin } = require("../auth");
 
 const router = express.Router();
